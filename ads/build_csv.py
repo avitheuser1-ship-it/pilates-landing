@@ -115,11 +115,12 @@ rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-גי
     "Description 2":"גלי את המסלול שמתאים לך והתחלי עכשיו ללא התחייבות.",
     "Description 3":"קבעי פגישת היכרות חינם.",
     "Path 1":"פילאטיס","Path 2":"שרון"}))
-rows.append(mk({"Campaign":"קמפיין התקשרות בלבד","Ad group":"התקשרות-בלבד","Ad type":"Call only ad","Asset action":"ADD",
-    "Status":"Paused",
-    "Description 1":"סטודיו פילאטיס יוקרתי בנתניה והשרון.",
-    "Description 2":"התחילי עכשיו ללא התחייבות.",
-    "Business name":"לומרה פילאטיס","Phone number":PHONE,"Country code":"IL","Verification URL":HOME}))
+# ---- Call only ad (added MANUALLY in Editor UI) ----
+# NOTE: Call-only ad row fails "Unable to determine entity-type" in flat CSV
+# (Editor can't infer the entity when Final URL is absent). The campaign
+# "קמפיין התקשרות בלבד" + ad group "התקשרות-בלבד" import fine; add the ad
+# manually: open that ad group -> Ads -> Call-only ad -> fill Business name,
+# phone 0500000000, country IL, verification URL = landing page. See README.
 rows.append(mk({"Campaign":"קמפיין מותג","Ad group":"מותג-לומרה","Ad type":"Responsive search ad","Asset action":"ADD",
     "Status":"Paused","Final URL":HOME,
     "Headline 1":"פילאטיס עם {KeyWord:לומרה}","Headline 2":"הסטודיו של {KeyWord:לומרה}",
@@ -159,8 +160,8 @@ for camp in ["קמפיין חיפוש","קמפיין מותג"]:
 # ---- Structured snippets ----
 rows.append(mk({"Campaign":"קמפיין חיפוש","Structured snippet header":"סוגים",
     "Structured snippet values":"רפורמר; חוג קבוצתי; אימון פרטי","Asset action":"ADD","Status":"Paused"}))
-rows.append(mk({"Campaign":"קמפיין חיפוש","Structured snippet header":"יתרונות",
-    "Structured snippet values":"ללא התחייבות; אווירה שקטה; מדריכים צמודים","Asset action":"ADD","Status":"Paused"}))
+# NOTE: "יתרונות" is not a valid Google Ads Structured Snippet header
+# (only predefined headers like סוגים/מותגים/דגמים allowed) -> omitted.
 
 # ---- Call extension (manual in UI; see note above) ----
 
