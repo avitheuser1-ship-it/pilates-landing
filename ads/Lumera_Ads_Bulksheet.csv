@@ -1,100 +1,68 @@
-﻿Campaign
-Campaign,Campaign type,Campaign subtype,Status,Networks,Languages,Bid strategy type,Budget
-קמפיין חיפוש,Search,Standard,Paused,Google search; Search partners,Hebrew,Manual CPC,50
-קמפיין מותג,Search,Standard,Paused,Google search; Search partners,Hebrew,Manual CPC,30
-קמפיין GDN,Display,Standard,Paused,Display Network,Hebrew,Manual CPC,40
-קמפיין וידאו,Video,,Paused,YouTube,Hebrew,Manual CPC,30
-
-Ad group
-Campaign,Ad group,Max CPC,Ad group type,Status
-קמפיין חיפוש,חיפוש-צורך-בריאות,3.5,,Paused
-קמפיין חיפוש,חיפוש-גישה-שרון,3.5,,Paused
-קמפיין חיפוש,חיפוש-התקשרות-בלבד,4,Call only,Paused
-קמפיין מותג,מותג-לומרה,4,,Paused
-קמפיין GDN,GDN-לא-המירו,2,,Paused
-קמפיין GDN,GDN-אפסייל,2,,Paused
-קמפיין וידאו,וידאו-לומרה,3,,Paused
-
-Keyword
-Campaign,Ad group,Keyword,Match type,Max CPC,Status
-קמפיין חיפוש,חיפוש-צורך-בריאות,פילאטיס מכשירים,Exact,4,Paused
-קמפיין חיפוש,חיפוש-צורך-בריאות,פילאטיס לגב,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-צורך-בריאות,חיזוק ליבה פילאטיס,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-צורך-בריאות,שיקום פציעה פילאטיס,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-צורך-בריאות,פילאטיס שיפור יציבה,Exact,4,Paused
-קמפיין חיפוש,חיפוש-צורך-בריאות,פילאטיס אחרי לידה,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-צורך-בריאות,אימון ליבה נשים,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-גישה-שרון,פילאטיס נתניה,Exact,4,Paused
-קמפיין חיפוש,חיפוש-גישה-שרון,סטודיו פילאטיס השרון,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-גישה-שרון,פילאטיס מכשירים השרון,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-גישה-שרון,פילאטיס קרוב אלי,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-גישה-שרון,סטודיו פילאטיס באזור השרון,Exact,4,Paused
-קמפיין חיפוש,חיפוש-גישה-שרון,פילאטיס בנתניה והסביבה,Phrase,4,Paused
-קמפיין חיפוש,חיפוש-גישה-שרון,שיעורי פילאטיס השרון,Exact,4,Paused
-קמפיין מותג,מותג-לומרה,לומרה,Exact,5,Paused
-קמפיין מותג,מותג-לומרה,LUMERA,Exact,5,Paused
-קמפיין מותג,מותג-לומרה,לומרה פילאטיס,Phrase,5,Paused
-קמפיין מותג,מותג-לומרה,סטודיו לומרה,Phrase,5,Paused
-קמפיין מותג,מותג-לומרה,לומרה נתניה,Exact,5,Paused
-
-Ad
-Campaign,Ad group,Ad type,Status,Final URL,Headline 1,Headline 2,Headline 3,Headline 4,Headline 5,Headline 6,Headline 7,Headline 8,Headline 9,Headline 10,Headline 11,Headline 12,Description 1,Description 2,Description 3,Path 1,Path 2,Business name,Phone number,Country code,Verification URL,YouTube video
-קמפיין חיפוש,חיפוש-צורך-בריאות,Responsive search ad,Paused,https://avitheuser1-ship-it.github.io/pilates-landing/product1.html,פילאטיס מכשירים ברמה אחרת,רפורמר מקצועי בשרון,חיזוק ליבה ושיפור יציבה,סטודיו שקט ומפנק בנתניה,אימון מותאם אישית,מכשירי רפורמר מהשורה הראשונה,שיקום אחרי פציעה,גם למתחילות ומתקדמות,ללא התחייבות,מדריכים צמודים,,,בסטודיו לומרה תמצאי חווית פילאטיס מדויקת על מכשירי רפורמר.,קבעי שיעור ראשון ללא התחייבות — אווירה שקטה בלב השרון.,מחירים כבר מ-120 ₪ לשיעור.,פילאטיס,שרון,,,,,
-קמפיין חיפוש,חיפוש-גישה-שרון,Responsive search ad,Paused,https://avitheuser1-ship-it.github.io/pilates-landing/,פילאטיס בנתניה והשרון,סטודיו יוקרתי קרוב אליך,3 מסלולי אימון מותאמים,קבוצות אינטימיות עד 8,אימון פרטי 1 על 1,פילאטיס מכשירים ורצפה,חוויה שקטה ומפנקת,מדריכים צמודים,ללא התחייבות,התחלה עכשיו,,,לומרה — סטודיו פילאטיס יוקרתי באזור השרון.,גלי את המסלול שמתאים לך והתחלי עכשיו ללא התחייבות.,קבעי פגישת היכרות חינם.,פילאטיס,שרון,,,,,
-קמפיין חיפוש,חיפוש-התקשרות-בלבד,Call only ad,Paused,https://avitheuser1-ship-it.github.io/pilates-landing/,,,,,,,,,,,,,סטודיו פילאטיס יוקרתי בנתניה והשרון.,התחילי עכשיו ללא התחייבות.,,,,לומרה פילאטיס,0500000000,IL,https://avitheuser1-ship-it.github.io/pilates-landing/,
-קמפיין מותג,מותג-לומרה,Responsive search ad,Paused,https://avitheuser1-ship-it.github.io/pilates-landing/,פילאטיס עם {KeyWord:לומרה},הסטודיו של {KeyWord:לומרה},{KeyWord:לומרה} — תנועה מדויקת,סטודיו יוקרתי בנתניה,פילאטיס מכשירים וקבוצות,התחלה ללא התחייבות,רפורמר מקצועי,קבוצות אינטימיות,,,,,{KeyWord:לומרה} — סטודיו פילאטיס יוקרתי באזור השרון.,הזמיני שיעור היכרות חינם והצטרפי לחוויה.,"מכשירי רפורמר, חוגים ואימונים אישיים.",לומרה,פילאטיס,,,,,
-קמפיין GDN,GDN-לא-המירו,Responsive display ad,Paused,https://avitheuser1-ship-it.github.io/pilates-landing/product1.html,ראית פעם את לומרה?,חזרי לסטודיו,פילאטיס מכשירים בשרון,,,,,,,,,,לא הספקת להירשם? חזרי ללומרה וקבעי שיעור ראשון.,"אווירה שקטה, רפורמר מקצועי, ללא התחייבות.",,,,,,,,
-קמפיין GDN,GDN-אפסייל,Responsive display ad,Paused,https://avitheuser1-ship-it.github.io/pilates-landing/product3.html,המשיכי את הדרך עם לומרה,שיעור פרטי בהנחה,קחי את זה צעד קדימה,,,,,,,,,,אהבת את השיעור הראשון? קבלי אימון פרטי בהנחה בלעדית.,מחכות לך חוויות פילאטיס מתקדמות בלומרה.,,,,,,,,
-קמפיין וידאו,וידאו-לומרה,Video ad,Paused,https://avitheuser1-ship-it.github.io/pilates-landing/,,,,,,,,,,,,,,,,,,,,,,https://www.youtube.com/watch?v=gRYUN0c9i44
-קמפיין וידאו,וידאו-לומרה,Video ad,Paused,https://avitheuser1-ship-it.github.io/pilates-landing/,,,,,,,,,,,,,,,,,,,,,,https://www.youtube.com/watch?v=niJP9ud4zdw
-
-Sitelink
-Campaign,Sitelink text,Final URL,Status
-קמפיין חיפוש,פילאטיס מכשירים,https://avitheuser1-ship-it.github.io/pilates-landing/product1.html,Paused
-קמפיין חיפוש,חוג קבוצתי,https://avitheuser1-ship-it.github.io/pilates-landing/product2.html,Paused
-קמפיין חיפוש,אימון פרטי,https://avitheuser1-ship-it.github.io/pilates-landing/product3.html,Paused
-קמפיין חיפוש,קבעי פגישה,https://avitheuser1-ship-it.github.io/pilates-landing/,Paused
-קמפיין מותג,פילאטיס מכשירים,https://avitheuser1-ship-it.github.io/pilates-landing/product1.html,Paused
-קמפיין מותג,חוג קבוצתי,https://avitheuser1-ship-it.github.io/pilates-landing/product2.html,Paused
-קמפיין מותג,אימון פרטי,https://avitheuser1-ship-it.github.io/pilates-landing/product3.html,Paused
-
-Callout
-Campaign,Callout text,Status
-קמפיין חיפוש,אווירה שקטה ומפנקת,Paused
-קמפיין חיפוש,מכשירי רפורמר מקצועיים,Paused
-קמפיין חיפוש,קבוצות אינטימיות,Paused
-קמפיין חיפוש,ללא התחייבות,Paused
-קמפיין חיפוש,מדריכים צמודים,Paused
-קמפיין מותג,אווירה שקטה ומפנקת,Paused
-קמפיין מותג,מכשירי רפורמר מקצועיים,Paused
-קמפיין מותג,קבוצות אינטימיות,Paused
-קמפיין מותג,ללא התחייבות,Paused
-קמפיין מותג,מדריכים צמודים,Paused
-
-Structured snippet
-Campaign,Structured snippet header,Structured snippet values,Status
-קמפיין חיפוש,סוגים,רפורמר; חוג קבוצתי; אימון פרטי,Paused
-קמפיין חיפוש,יתרונות,ללא התחייבות; אווירה שקטה; מדריכים צמודים,Paused
-
-Call
-Campaign,Call phone number,Call country code,Call display location,Status
-קמפיין חיפוש,0500000000,IL,Mobile and computers,Paused
-קמפיין מותג,0500000000,IL,Mobile and computers,Paused
-
-Countdown
-Campaign,Countdown text,Countdown date,Countdown time,Countdown language,Status
-קמפיין חיפוש,המבצע מסתיים בעוד,20260730,,Hebrew,Paused
-קמפיין מותג,המבצע מסתיים בעוד,20260730,,Hebrew,Paused
-
-Negative keyword
-Campaign,Negative keyword,Negative keyword match type,Status
-קמפיין חיפוש,חינם,Exact,Paused
-קמפיין חיפוש,עבודה,Exact,Paused
-קמפיין חיפוש,לימודים,Exact,Paused
-קמפיין חיפוש,קורס מדריכים,Exact,Paused
-קמפיין חיפוש,סרטונים,Exact,Paused
-
-YouTube channel
-Campaign,Ad group,YouTube channels,Status
-קמפיין וידאו,וידאו-לומרה,youtube.com/c/blogilates;youtube.com/c/yogawithadriene;youtube.com/c/popsugarfitness;youtube.com/c/PsycheTruth,Paused
-
+﻿Campaign,Campaign type,Campaign subtype,Status,Networks,Languages,Bid strategy type,Budget,EU political ads,Ad group,Ad group type,Max CPC,Keyword,Match type,Ad,Ad type,Final URL,Headline 1,Headline 2,Headline 3,Headline 4,Headline 5,Headline 6,Headline 7,Headline 8,Headline 9,Headline 10,Headline 11,Headline 12,Headline 13,Headline 14,Headline 15,Description 1,Description 2,Description 3,Description 4,Path 1,Path 2,Business name,Phone number,Country code,Verification URL,Sitelink text,Sitelink final URL,Callout text,Structured snippet header,Structured snippet values,Call phone number,Call country code,Call display location,Countdown text,Countdown date,Countdown time,Countdown language,Negative keyword,Negative keyword match type,YouTube channels,YouTube video
+קמפיין חיפוש,Search,Standard,Paused,Google search; Search partners,Hebrew,Manual CPC,50,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין מותג,Search,Standard,Paused,Google search; Search partners,Hebrew,Manual CPC,30,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין GDN,Display,Standard,Paused,Display Network,Hebrew,Manual CPC,40,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין וידאו,Video,,Paused,YouTube,Hebrew,Manual CPC,30,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,3.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,3.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-התקשרות-בלבד,Call only,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,מותג-לומרה,,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין GDN,,,Paused,,,,,,GDN-לא-המירו,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין GDN,,,Paused,,,,,,GDN-אפסייל,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין וידאו,,,Paused,,,,,,וידאו-לומרה,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,4,פילאטיס מכשירים,Exact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,4,פילאטיס לגב,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,4,חיזוק ליבה פילאטיס,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,4,שיקום פציעה פילאטיס,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,4,פילאטיס שיפור יציבה,Exact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,4,פילאטיס אחרי לידה,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,4,אימון ליבה נשים,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,4,פילאטיס נתניה,Exact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,4,סטודיו פילאטיס השרון,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,4,פילאטיס מכשירים השרון,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,4,פילאטיס קרוב אלי,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,4,סטודיו פילאטיס באזור השרון,Exact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,4,פילאטיס בנתניה והסביבה,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,4,שיעורי פילאטיס השרון,Exact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,מותג-לומרה,,5,לומרה,Exact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,מותג-לומרה,,5,LUMERA,Exact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,מותג-לומרה,,5,לומרה פילאטיס,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,מותג-לומרה,,5,סטודיו לומרה,Phrase,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,מותג-לומרה,,5,לומרה נתניה,Exact,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-צורך-בריאות,,,,,Responsive search ad,,https://avitheuser1-ship-it.github.io/pilates-landing/product1.html,פילאטיס מכשירים ברמה אחרת,רפורמר מקצועי בשרון,חיזוק ליבה ושיפור יציבה,סטודיו שקט ומפנק בנתניה,אימון מותאם אישית,מכשירי רפורמר מהשורה הראשונה,שיקום אחרי פציעה,גם למתחילות ומתקדמות,ללא התחייבות,מדריכים צמודים,,,,,,בסטודיו לומרה תמצאי חווית פילאטיס מדויקת על מכשירי רפורמר.,קבעי שיעור ראשון ללא התחייבות — אווירה שקטה בלב השרון.,מחירים כבר מ-120 ₪ לשיעור.,,פילאטיס,שרון,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-גישה-שרון,,,,,Responsive search ad,,https://avitheuser1-ship-it.github.io/pilates-landing/,פילאטיס בנתניה והשרון,סטודיו יוקרתי קרוב אליך,3 מסלולי אימון מותאמים,קבוצות אינטימיות עד 8,אימון פרטי 1 על 1,פילאטיס מכשירים ורצפה,חוויה שקטה ומפנקת,מדריכים צמודים,ללא התחייבות,התחלה עכשיו,,,,,,לומרה — סטודיו פילאטיס יוקרתי באזור השרון.,גלי את המסלול שמתאים לך והתחלי עכשיו ללא התחייבות.,קבעי פגישת היכרות חינם.,,פילאטיס,שרון,,,,,,,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,חיפוש-התקשרות-בלבד,,,,,Call only ad,,https://avitheuser1-ship-it.github.io/pilates-landing/,,,,,,,,,,,,,,,,סטודיו פילאטיס יוקרתי בנתניה והשרון.,התחילי עכשיו ללא התחייבות.,,,,,לומרה פילאטיס,0500000000,IL,https://avitheuser1-ship-it.github.io/pilates-landing/,,,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,מותג-לומרה,,,,,Responsive search ad,,https://avitheuser1-ship-it.github.io/pilates-landing/,פילאטיס עם {KeyWord:לומרה},הסטודיו של {KeyWord:לומרה},{KeyWord:לומרה} — תנועה מדויקת,סטודיו יוקרתי בנתניה,פילאטיס מכשירים וקבוצות,התחלה ללא התחייבות,רפורמר מקצועי,קבוצות אינטימיות,,,,,,,,{KeyWord:לומרה} — סטודיו פילאטיס יוקרתי באזור השרון.,הזמיני שיעור היכרות חינם והצטרפי לחוויה.,"מכשירי רפורמר, חוגים ואימונים אישיים.",,לומרה,פילאטיס,,,,,,,,,,,,,,,,,,,,
+קמפיין GDN,,,Paused,,,,,,GDN-לא-המירו,,,,,Responsive display ad,,https://avitheuser1-ship-it.github.io/pilates-landing/product1.html,ראית פעם את לומרה?,חזרי לסטודיו,פילאטיס מכשירים בשרון,,,,,,,,,,,,,לא הספקת להירשם? חזרי ללומרה וקבעי שיעור ראשון.,"אווירה שקטה, רפורמר מקצועי, ללא התחייבות.",,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין GDN,,,Paused,,,,,,GDN-אפסייל,,,,,Responsive display ad,,https://avitheuser1-ship-it.github.io/pilates-landing/product3.html,המשיכי את הדרך עם לומרה,שיעור פרטי בהנחה,קחי את זה צעד קדימה,,,,,,,,,,,,,אהבת את השיעור הראשון? קבלי אימון פרטי בהנחה בלעדית.,מחכות לך חוויות פילאטיס מתקדמות בלומרה.,,,,,,,,,,,,,,,,,,,,,,,,
+קמפיין וידאו,,,Paused,,,,,,וידאו-לומרה,,,,,Video ad,,https://avitheuser1-ship-it.github.io/pilates-landing/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://www.youtube.com/watch?v=gRYUN0c9i44
+קמפיין וידאו,,,Paused,,,,,,וידאו-לומרה,,,,,Video ad,,https://avitheuser1-ship-it.github.io/pilates-landing/,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://www.youtube.com/watch?v=niJP9ud4zdw
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,פילאטיס מכשירים,https://avitheuser1-ship-it.github.io/pilates-landing/product1.html,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,חוג קבוצתי,https://avitheuser1-ship-it.github.io/pilates-landing/product2.html,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,אימון פרטי,https://avitheuser1-ship-it.github.io/pilates-landing/product3.html,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,קבעי פגישה,https://avitheuser1-ship-it.github.io/pilates-landing/,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,פילאטיס מכשירים,https://avitheuser1-ship-it.github.io/pilates-landing/product1.html,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,חוג קבוצתי,https://avitheuser1-ship-it.github.io/pilates-landing/product2.html,,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,אימון פרטי,https://avitheuser1-ship-it.github.io/pilates-landing/product3.html,,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,אווירה שקטה ומפנקת,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,מכשירי רפורמר מקצועיים,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,קבוצות אינטימיות,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ללא התחייבות,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,מדריכים צמודים,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,אווירה שקטה ומפנקת,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,מכשירי רפורמר מקצועיים,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,קבוצות אינטימיות,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ללא התחייבות,,,,,,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,מדריכים צמודים,,,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,סוגים,רפורמר; חוג קבוצתי; אימון פרטי,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,יתרונות,ללא התחייבות; אווירה שקטה; מדריכים צמודים,,,,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0500000000,IL,Mobile and computers,,,,,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0500000000,IL,Mobile and computers,,,,,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,המבצע מסתיים בעוד,20260730,,Hebrew,,,,
+קמפיין מותג,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,המבצע מסתיים בעוד,20260730,,Hebrew,,,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,חינם,Exact,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,עבודה,Exact,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,לימודים,Exact,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,קורס מדריכים,Exact,,
+קמפיין חיפוש,,,Paused,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,סרטונים,Exact,,
+קמפיין וידאו,,,Paused,,,,,,וידאו-לומרה,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,youtube.com/c/blogilates;youtube.com/c/yogawithadriene;youtube.com/c/popsugarfitness;youtube.com/c/PsycheTruth,
