@@ -116,7 +116,7 @@ rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-גי
     "Description 3":"קבעי פגישת היכרות חינם.",
     "Path 1":"פילאטיס","Path 2":"שרון"}))
 rows.append(mk({"Campaign":"קמפיין התקשרות בלבד","Ad group":"התקשרות-בלבד","Ad type":"Call only ad","Asset action":"ADD",
-    "Status":"Paused","Final URL":HOME,
+    "Status":"Paused",
     "Description 1":"סטודיו פילאטיס יוקרתי בנתניה והשרון.",
     "Description 2":"התחילי עכשיו ללא התחייבות.",
     "Business name":"לומרה פילאטיס","Phone number":PHONE,"Country code":"IL","Verification URL":HOME}))
@@ -145,12 +145,11 @@ rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לו
 rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Ad type":"Video ad","Asset action":"ADD",
     "Status":"Paused","Final URL":HOME,"YouTube video":"https://www.youtube.com/watch?v=niJP9ud4zdw"}))
 
-# ---- Sitelinks ----
-for camp, txt, url in [("קמפיין חיפוש","פילאטיס מכשירים",P1),("קמפיין חיפוש","חוג קבוצתי",P2),
-                       ("קמפיין חיפוש","אימון פרטי",P3),("קמפיין חיפוש","קבעי פגישה",HOME),
-                       ("קמפיין מותג","פילאטיס מכשירים",P1),("קמפיין מותג","חוג קבוצתי",P2),
-                       ("קמפיין מותג","אימון פרטי",P3)]:
-    rows.append(mk({"Campaign":camp,"Sitelink text":txt,"Sitelink final URL":url,"Asset action":"ADD","Status":"Paused"}))
+# ---- Sitelinks & Call extension ----
+# NOTE: Sitelinks + Call extension are added MANUALLY in the Editor UI.
+# In the flat CSV format, Editor rejects "Asset action=ADD" for these two
+# extension types (and rejects blank too). They import cleanly via UI in <2 min.
+# See README.md section "הוספת תוספים ידנית ב-Editor".
 
 # ---- Callouts ----
 for camp in ["קמפיין חיפוש","קמפיין מותג"]:
@@ -163,10 +162,7 @@ rows.append(mk({"Campaign":"קמפיין חיפוש","Structured snippet header"
 rows.append(mk({"Campaign":"קמפיין חיפוש","Structured snippet header":"יתרונות",
     "Structured snippet values":"ללא התחייבות; אווירה שקטה; מדריכים צמודים","Asset action":"ADD","Status":"Paused"}))
 
-# ---- Call extension ----
-for camp in ["קמפיין חיפוש","קמפיין מותג"]:
-    rows.append(mk({"Campaign":camp,"Call phone number":PHONE,"Call country code":"IL",
-        "Call display location":"Mobile and computers","Asset action":"ADD","Status":"Paused"}))
+# ---- Call extension (manual in UI; see note above) ----
 
 # ---- Countdown ----
 for camp in ["קמפיין חיפוש","קמפיין מותג"]:
