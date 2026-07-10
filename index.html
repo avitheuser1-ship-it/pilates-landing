@@ -3,17 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>הפילאטיס של עמית · סטודיו לפילאטיס יוקרתי באזור השרון</title>
+<title>לוּמֶרָה · סטודיו לפילאטיס יוקרתי באזור השרון</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;600&family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<div id="loader"><div class="mark">LUMERA</div></div>
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-XXXXXXXXX');</script>
 </head>
 <body>
 
 <nav class="nav" id="nav">
-  <a href="#home" class="logo">הפילאטיס של <span>עמית</span></a>
+  <a href="#home" class="logo">LUMERA</a>
   <div class="nav-links">
     <a href="#services">השירותים</a>
     <a href="#about">הסטודיו</a>
@@ -27,7 +28,7 @@
   <div class="hero-inner">
     <span class="eyebrow reveal">סטודיו לפילאטיס · אזור השרון</span>
     <h1 class="reveal d1">תנועה מדויקת.<br>גוף שקט. נפש מאוזנת.</h1>
-    <p class="reveal d2">בסטודיו של עמית תמצאו חווית פילאטיס ברמה אחרת — מכשירי רפורמר מקצועיים, אימונים פרטיים וקבוצות אינטימיות, באווירה שקטה ומפנקת בלב השרון.</p>
+    <p class="reveal d2">בלוּמֶרָה תמצאו חווית פילאטיס ברמה אחרת — מכשירי רפורמר מקצועיים, אימונים פרטיים וקבוצות אינטימיות, באווירה שקטה ומפנקת בלב השרון.</p>
     <div class="reveal d3">
       <a href="#services" class="cta">גלה את השיעורים</a>
       <a href="#contact" class="cta ghost">קבע פגישת היכרות</a>
@@ -78,7 +79,7 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow reveal">הסטודיו שלנו</span>
-      <h2 class="reveal d1">למה הפילאטיס של עמית?</h2>
+      <h2 class="reveal d1">למה לוּמֶרָה?</h2>
     </div>
     <div class="features">
       <div class="feature reveal d1"><div class="ic">◇</div><div><h4>מכשירי רפורמר מקצועיים</h4><p>ציוד פילאטיס מהשורה הראשונה לתוצאות מדויקות ובטוחות.</p></div></div>
@@ -100,6 +101,19 @@
       <img class="reveal d2" src="assets/img/gallery-2.jpg" alt="אימון רפורמר">
       <img class="reveal d3" src="assets/img/gallery-3.jpg" alt="תרגול קבוצתי">
       <img class="reveal" src="assets/img/gallery-4.jpg" alt="פרטים מהסטודיו">
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--charcoal)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">מה אומרים עלינו</span>
+      <h2 class="reveal d1">ההרגשה מדברת בעד עצמה</h2>
+    </div>
+    <div class="quote reveal d1">
+      <blockquote>מאז שאני בלוּמֶרָה הגב שלי אחרת. מקצועיות ברמה אחרת, ואווירה שגורמת לי לרצות לחזור כל שבוע.</blockquote>
+      <div class="who">— שרון, מתאמנת 8 חודשים</div>
     </div>
   </div>
 </section>
@@ -129,12 +143,14 @@
 </section>
 
 <footer>
-  <div class="logo">הפילאטיס של <span>עמית</span></div>
+  <div class="logo">LUMERA</div>
   <p>סטודיו לפילאטיס באזור השרון · נתניה והסביבה</p>
-  <p style="margin-top:10px;opacity:.6">© 2026 הפילאטיס של עמית · כל הזכויות שמורות</p>
+  <p style="margin-top:10px;opacity:.6">© 2026 לוּמֶרָה · כל הזכויות שמורות</p>
 </footer>
 
 <script>
+  // hide loader
+  window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('loader').classList.add('hide'),600);});
   // nav solid on scroll
   window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('solid',window.scrollY>60);});
   // reveal on view
