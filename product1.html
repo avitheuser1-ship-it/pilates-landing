@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>פילאטיס מכשירים (רפורמר) | הפילאטיס של עמית</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-XXXXXXXXX');</script>
+</head>
+<body>
+<nav class="nav solid"><a href="index.html" class="logo">הפילאטיס של <span>עמית</span></a>
+<div class="nav-links"><a href="index.html#services">השירותים</a><a href="index.html#about">הסטודיו</a><a href="index.html#gallery">גלריה</a><a href="index.html#contact">צור קשר</a></div></nav>
+
+<header class="hero">
+  <img src="assets/img/hero-reformer.jpg" alt="פילאטיס רפורמר">
+  <div class="hero-inner">
+    <span class="eyebrow reveal">מסלול מכשירים</span>
+    <h1 class="reveal d1">פילאטיס מכשירים (רפורמר)</h1>
+    <p class="reveal d2">אימון מדויק על גבי מכשיר רפורמר — לבניית גוף חזק, גמיש ומאוזן. מתאים למתקדמים, למשקמים אחרי פציעה ולמי שמחפש שליטה מדויקת בתנועה.</p>
+    <a href="#book" class="cta reveal d3">קבע שיעור ראשון</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow reveal">מה תקבל</span><h2 class="reveal d1">אימון שבונים סביב הגוף שלך</h2></div>
+    <div class="features">
+      <div class="feature reveal d1"><div class="ic">◇</div><div><h4>שליטה מלאה בתנועה</h4><p>הרפורמר מאפשר התנגדות מדורגת — לחיזוק מדויק ללא עומס מיותר.</p></div></div>
+      <div class="feature reveal d2"><div class="ic">◇</div><div><h4>שיקום ויציבה</h4><p>מדויק במיוחד לשיקום אחרי פציעה ולשיפור יציבה וטווח תנועה.</p></div></div>
+      <div class="feature reveal d1"><div class="ic">◇</div><div><h4>הדרכה צמודה</h4><p>עד 4 מתאמנים בקבוצה — תשומת לב אישית מכל מדריך.</p></div></div>
+      <div class="feature reveal d2"><div class="ic">◇</div><div><h4>תוכנית מותאמת</h4><p>בונים יחד מסלול התקדמות לפי היעדים שלך.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="form-sec">
+  <div class="wrap">
+    <div class="form-card">
+      <h3>רוצה להתחיל?</h3>
+      <p class="sub">השאר פרטים ונקבע פגישת היכרות ראשונה ללא התחייבות.</p>
+      <form onsubmit="track(event)">
+        <div class="field"><label>שם מלא</label><input type="text" required placeholder="השם שלך"></div>
+        <div class="field"><label>טלפון</label><input type="tel" required placeholder="050-0000000"></div>
+        <div class="field"><label>אימייל</label><input type="email" required placeholder="you@example.com"></div>
+        <button type="submit" class="cta">שלח לי פרטים</button>
+        <p class="fine">הפרטים נשמרים אצלנו בלבד ומשמשים ליצירת קשר בלבד.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer><div class="logo">הפילאטיס של <span>עמית</span></div><p>סטודיו לפילאטיס באזור השרון · נתניה והסביבה</p></footer>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');}),{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  function track(e){e.preventDefault();gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/YYYYYYYYYYYYYY'});window.location.href='thank-you.html';}
+</script>
+</body>
+</html>

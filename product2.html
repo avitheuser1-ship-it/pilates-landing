@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>חוג פילאטיס קבוצתי (רצפה) | הפילאטיס של עמית</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-XXXXXXXXX');</script>
+</head>
+<body>
+<nav class="nav solid"><a href="index.html" class="logo">הפילאטיס של <span>עמית</span></a>
+<div class="nav-links"><a href="index.html#services">השירותים</a><a href="index.html#about">הסטודיו</a><a href="index.html#gallery">גלריה</a><a href="index.html#contact">צור קשר</a></div></nav>
+
+<header class="hero">
+  <img src="assets/img/hero-group.jpg" alt="חוג פילאטיס קבוצתי">
+  <div class="hero-inner">
+    <span class="eyebrow reveal">מסלול קבוצתי</span>
+    <h1 class="reveal d1">חוג פילאטיס (רצפה)</h1>
+    <p class="reveal d2">חוג נשים באווירה תומכת ונעימה — לחיזוק הליבה, שיפור הגמישות ותחושת גוף טובה. מתאים למתחילות ולנשים בכל הגילים.</p>
+    <a href="#book" class="cta reveal d3">הצטרפי לשיעור ניסיון</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow reveal">מה תקבלי</span><h2 class="reveal d1">אימון שמחבר גוף ונפש</h2></div>
+    <div class="features">
+      <div class="feature reveal d1"><div class="ic">◇</div><div><h4>קבוצה אינטימית</h4><p>עד 8 מתאמנות — תשומת לב אישית ותחושת שייכות.</p></div></div>
+      <div class="feature reveal d2"><div class="ic">◇</div><div><h4>תרגול מדורג</h4><p>מרמת מתחילות ועד מתקדמות — כל אחת בקצב שלה.</p></div></div>
+      <div class="feature reveal d1"><div class="ic">◇</div><div><h4>יציבה ונשימה</h4><p>דגש on תנועה נכונה, שחרור מתחים ואיזון.</p></div></div>
+      <div class="feature reveal d2"><div class="ic">◇</div><div><h4>מדריכה צמודה</h4><p>עוקבת אחרי ההתקדמות שלך ומתאימה תרגילים.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="form-sec">
+  <div class="wrap">
+    <div class="form-card">
+      <h3>מעוניינת להצטרף?</h3>
+      <p class="sub">השאירי פרטים ונקבע שיעור ניסיון ראשון ללא התחייבות.</p>
+      <form onsubmit="track(event)">
+        <div class="field"><label>שם מלא</label><input type="text" required placeholder="השם שלך"></div>
+        <div class="field"><label>טלפון</label><input type="tel" required placeholder="050-0000000"></div>
+        <div class="field"><label>אימייל</label><input type="email" required placeholder="you@example.com"></div>
+        <button type="submit" class="cta">שלחי לי פרטים</button>
+        <p class="fine">הפרטים נשמרים אצלנו בלבד ומשמשים ליצירת קשר בלבד.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer><div class="logo">הפילאטיס של <span>עמית</span></div><p>סטודיו לפילאטיס באזור השרון · נתניה והסביבה</p></footer>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');}),{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  function track(e){e.preventDefault();gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/YYYYYYYYYYYYYY'});window.location.href='thank-you.html';}
+</script>
+</body>
+</html>

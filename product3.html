@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>אימון פילאטיס פרטי (1 על 1) | הפילאטיס של עמית</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-XXXXXXXXX');</script>
+</head>
+<body>
+<nav class="nav solid"><a href="index.html" class="logo">הפילאטיס של <span>עמית</span></a>
+<div class="nav-links"><a href="index.html#services">השירותים</a><a href="index.html#about">הסטודיו</a><a href="index.html#gallery">גלריה</a><a href="index.html#contact">צור קשר</a></div></nav>
+
+<header class="hero">
+  <img src="assets/img/hero-private.jpg" alt="אימון פילאטיס פרטי">
+  <div class="hero-inner">
+    <span class="eyebrow reveal">מסלול פרטי</span>
+    <h1 class="reveal d1">אימון פילאטיס פרטי (1 על 1)</h1>
+    <p class="reveal d2">אימון אישי לחלוטין עם מדריך צמוד — מותאם בדיוק ליעדים שלך: שיקום, חיזוק, ירידה במשקל או שיפור טווח תנועה. שליטה מלאה בקצב ובתוכן.</p>
+    <a href="#book" class="cta reveal d3">תיאום אימון ראשון</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow reveal">מה תקבל</span><h2 class="reveal d1">כל התשומת לב — רק לך</h2></div>
+    <div class="features">
+      <div class="feature reveal d1"><div class="ic">◇</div><div><h4>מפגש 1 על 1</h4><p>55 דקות שלמות של אימון אישי ללא הסחות.</p></div></div>
+      <div class="feature reveal d2"><div class="ic">◇</div><div><h4>תוכנית אישית</h4><p>בונים יחד תוכנית ועוקבים אחרי התקדמות.</p></div></div>
+      <div class="feature reveal d1"><div class="ic">◇</div><div><h4>גמישות מלאה</h4><p>גם בערב ובסופי שבוע — לפי היומן שלך.</p></div></div>
+      <div class="feature reveal d2"><div class="ic">◇</div><div><h4>פרטיות מוחלטת</h4><p>סביבה בטוחה ונעימה לעבודה עמוקה על הגוף.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="form-sec">
+  <div class="wrap">
+    <div class="form-card">
+      <h3>מוכן להתחיל?</h3>
+      <p class="sub">השאר פרטים ונקבע אימון ראשון פרטי ללא התחייבות.</p>
+      <form onsubmit="track(event)">
+        <div class="field"><label>שם מלא</label><input type="text" required placeholder="השם שלך"></div>
+        <div class="field"><label>טלפון</label><input type="tel" required placeholder="050-0000000"></div>
+        <div class="field"><label>אימייל</label><input type="email" required placeholder="you@example.com"></div>
+        <button type="submit" class="cta">קבעו לי אימון</button>
+        <p class="fine">הפרטים נשמרים אצלנו בלבד ומשמשים ליצירת קשר בלבד.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer><div class="logo">הפילאטיס של <span>עמית</span></div><p>סטודיו לפילאטיס באזור השרון · נתניה והסביבה</p></footer>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');}),{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  function track(e){e.preventDefault();gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/YYYYYYYYYYYYYY'});window.location.href='thank-you.html';}
+</script>
+</body>
+</html>
