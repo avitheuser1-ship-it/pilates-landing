@@ -16,7 +16,7 @@ COLS = [
     "Bid strategy type","Budget","EU political ads",
     "Ad group","Ad group type","Max CPC",
     "Keyword","Match type",
-    "Ad","Ad type","Final URL",
+    "Ad type","Final URL","Asset action",
     "Headline 1","Headline 2","Headline 3","Headline 4","Headline 5","Headline 6",
     "Headline 7","Headline 8","Headline 9","Headline 10","Headline 11","Headline 12",
     "Headline 13","Headline 14","Headline 15",
@@ -50,19 +50,24 @@ rows.append(mk({"Campaign":"קמפיין GDN","Campaign type":"Display","Campaig
     "Status":"Paused","Networks":"Display Network","Languages":"Hebrew",
     "Bid strategy type":"Manual CPC","Budget":"40","EU political ads":"No"}))
 rows.append(mk({"Campaign":"קמפיין וידאו","Campaign type":"Video",
-    "Status":"Paused","Networks":"YouTube","Languages":"Hebrew",
+    "Status":"Paused","Networks":"","Languages":"Hebrew",
     "Bid strategy type":"Manual CPC","Budget":"30","EU political ads":"No"}))
 
-# ---- Ad groups ----
+# ---- Call-only campaign (separate campaign, not ad group) ----
+rows.append(mk({"Campaign":"קמפיין התקשרות בלבד","Campaign type":"Search","Campaign subtype":"Call only",
+    "Status":"Paused","Networks":"Google search; Search partners","Languages":"Hebrew",
+    "Bid strategy type":"Manual CPC","Budget":"30","EU political ads":"No"}))
+rows.append(mk({"Campaign":"קמפיין התקשרות בלבד","Ad group":"התקשרות-בלבד","Max CPC":"4","Status":"Paused"}))
+
+# ---- Ad groups (search / brand / GDN / video) ----
 rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-צורך-בריאות","Max CPC":"3.5","Status":"Paused"}))
 rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-גישה-שרון","Max CPC":"3.5","Status":"Paused"}))
-rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-התקשרות-בלבד","Ad group type":"Call only","Max CPC":"4","Status":"Paused"}))
 rows.append(mk({"Campaign":"קמפיין מותג","Ad group":"מותג-לומרה","Max CPC":"4","Status":"Paused"}))
 rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-לא-המירו","Max CPC":"2","Status":"Paused"}))
 rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-אפסייל","Max CPC":"2","Status":"Paused"}))
 rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Max CPC":"3","Status":"Paused"}))
 
-# ---- Keywords ----
+
 kw_data = [
     ("קמפיין חיפוש","חיפוש-צורך-בריאות","פילאטיס מכשירים","Exact",4),
     ("קמפיין חיפוש","חיפוש-צורך-בריאות","פילאטיס לגב","Phrase",4),
@@ -88,7 +93,7 @@ for camp, ag, kw, mt, cpc in kw_data:
     rows.append(mk({"Campaign":camp,"Ad group":ag,"Keyword":kw,"Match type":mt,"Max CPC":str(cpc),"Status":"Paused"}))
 
 # ---- Ads ----
-rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-צורך-בריאות","Ad":"Responsive search ad",
+rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-צורך-בריאות","Ad type":"Responsive search ad","Asset action":"ADD",
     "Status":"Paused","Final URL":P1,
     "Headline 1":"פילאטיס מכשירים ברמה אחרת","Headline 2":"רפורמר מקצועי בשרון",
     "Headline 3":"חיזוק ליבה ושיפור יציבה","Headline 4":"סטודיו שקט ומפנק בנתניה",
@@ -99,7 +104,7 @@ rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-צו
     "Description 2":"קבעי שיעור ראשון ללא התחייבות — אווירה שקטה בלב השרון.",
     "Description 3":"מחירים כבר מ-120 ₪ לשיעור.",
     "Path 1":"פילאטיס","Path 2":"שרון"}))
-rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-גישה-שרון","Ad":"Responsive search ad",
+rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-גישה-שרון","Ad type":"Responsive search ad","Asset action":"ADD",
     "Status":"Paused","Final URL":HOME,
     "Headline 1":"פילאטיס בנתניה והשרון","Headline 2":"סטודיו יוקרתי קרוב אליך",
     "Headline 3":"3 מסלולי אימון מותאמים","Headline 4":"קבוצות אינטימיות עד 8",
@@ -110,12 +115,12 @@ rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-גי
     "Description 2":"גלי את המסלול שמתאים לך והתחלי עכשיו ללא התחייבות.",
     "Description 3":"קבעי פגישת היכרות חינם.",
     "Path 1":"פילאטיס","Path 2":"שרון"}))
-rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-התקשרות-בלבד","Ad":"Call only ad",
+rows.append(mk({"Campaign":"קמפיין התקשרות בלבד","Ad group":"התקשרות-בלבד","Ad type":"Call only ad","Asset action":"ADD",
     "Status":"Paused","Final URL":HOME,
     "Description 1":"סטודיו פילאטיס יוקרתי בנתניה והשרון.",
     "Description 2":"התחילי עכשיו ללא התחייבות.",
     "Business name":"לומרה פילאטיס","Phone number":PHONE,"Country code":"IL","Verification URL":HOME}))
-rows.append(mk({"Campaign":"קמפיין מותג","Ad group":"מותג-לומרה","Ad":"Responsive search ad",
+rows.append(mk({"Campaign":"קמפיין מותג","Ad group":"מותג-לומרה","Ad type":"Responsive search ad","Asset action":"ADD",
     "Status":"Paused","Final URL":HOME,
     "Headline 1":"פילאטיס עם {KeyWord:לומרה}","Headline 2":"הסטודיו של {KeyWord:לומרה}",
     "Headline 3":"{KeyWord:לומרה} — תנועה מדויקת","Headline 4":"סטודיו יוקרתי בנתניה",
@@ -125,19 +130,19 @@ rows.append(mk({"Campaign":"קמפיין מותג","Ad group":"מותג-לומר
     "Description 2":"הזמיני שיעור היכרות חינם והצטרפי לחוויה.",
     "Description 3":"מכשירי רפורמר, חוגים ואימונים אישיים.",
     "Path 1":"לומרה","Path 2":"פילאטיס"}))
-rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-לא-המירו","Ad":"Responsive display ad",
+rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-לא-המירו","Ad type":"Responsive display ad","Asset action":"ADD",
     "Status":"Paused","Final URL":P1,
     "Headline 1":"ראית פעם את לומרה?","Headline 2":"חזרי לסטודיו","Headline 3":"פילאטיס מכשירים בשרון",
     "Description 1":"לא הספקת להירשם? חזרי ללומרה וקבעי שיעור ראשון.",
     "Description 2":"אווירה שקטה, רפורמר מקצועי, ללא התחייבות."}))
-rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-אפסייל","Ad":"Responsive display ad",
+rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-אפסייל","Ad type":"Responsive display ad","Asset action":"ADD",
     "Status":"Paused","Final URL":P3,
     "Headline 1":"המשיכי את הדרך עם לומרה","Headline 2":"שיעור פרטי בהנחה","Headline 3":"קחי את זה צעד קדימה",
     "Description 1":"אהבת את השיעור הראשון? קבלי אימון פרטי בהנחה בלעדית.",
     "Description 2":"מחכות לך חוויות פילאטיס מתקדמות בלומרה."}))
-rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Ad":"Video ad",
+rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Ad type":"Video ad","Asset action":"ADD",
     "Status":"Paused","Final URL":HOME,"YouTube video":"https://www.youtube.com/watch?v=gRYUN0c9i44"}))
-rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Ad":"Video ad",
+rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Ad type":"Video ad","Asset action":"ADD",
     "Status":"Paused","Final URL":HOME,"YouTube video":"https://www.youtube.com/watch?v=niJP9ud4zdw"}))
 
 # ---- Sitelinks ----
@@ -145,28 +150,28 @@ for camp, txt, url in [("קמפיין חיפוש","פילאטיס מכשירים
                        ("קמפיין חיפוש","אימון פרטי",P3),("קמפיין חיפוש","קבעי פגישה",HOME),
                        ("קמפיין מותג","פילאטיס מכשירים",P1),("קמפיין מותג","חוג קבוצתי",P2),
                        ("קמפיין מותג","אימון פרטי",P3)]:
-    rows.append(mk({"Campaign":camp,"Sitelink text":txt,"Sitelink final URL":url,"Status":"Paused"}))
+    rows.append(mk({"Campaign":camp,"Sitelink text":txt,"Sitelink final URL":url,"Asset action":"ADD","Status":"Paused"}))
 
 # ---- Callouts ----
 for camp in ["קמפיין חיפוש","קמפיין מותג"]:
     for t in ["אווירה שקטה ומפנקת","מכשירי רפורמר מקצועיים","קבוצות אינטימיות","ללא התחייבות","מדריכים צמודים"]:
-        rows.append(mk({"Campaign":camp,"Callout text":t,"Status":"Paused"}))
+        rows.append(mk({"Campaign":camp,"Callout text":t,"Asset action":"ADD","Status":"Paused"}))
 
 # ---- Structured snippets ----
 rows.append(mk({"Campaign":"קמפיין חיפוש","Structured snippet header":"סוגים",
-    "Structured snippet values":"רפורמר; חוג קבוצתי; אימון פרטי","Status":"Paused"}))
+    "Structured snippet values":"רפורמר; חוג קבוצתי; אימון פרטי","Asset action":"ADD","Status":"Paused"}))
 rows.append(mk({"Campaign":"קמפיין חיפוש","Structured snippet header":"יתרונות",
-    "Structured snippet values":"ללא התחייבות; אווירה שקטה; מדריכים צמודים","Status":"Paused"}))
+    "Structured snippet values":"ללא התחייבות; אווירה שקטה; מדריכים צמודים","Asset action":"ADD","Status":"Paused"}))
 
 # ---- Call extension ----
 for camp in ["קמפיין חיפוש","קמפיין מותג"]:
     rows.append(mk({"Campaign":camp,"Call phone number":PHONE,"Call country code":"IL",
-        "Call display location":"Mobile and computers","Status":"Paused"}))
+        "Call display location":"Mobile and computers","Asset action":"ADD","Status":"Paused"}))
 
 # ---- Countdown ----
 for camp in ["קמפיין חיפוש","קמפיין מותג"]:
     rows.append(mk({"Campaign":camp,"Countdown text":"המבצע מסתיים בעוד",
-        "Countdown date":"20260730","Countdown language":"Hebrew","Status":"Paused"}))
+        "Countdown date":"20260730","Countdown language":"Hebrew","Asset action":"ADD","Status":"Paused"}))
 
 # ---- Negative keywords ----
 for nk in ["חינם","עבודה","לימודים","קורס מדריכים","סרטונים"]:
