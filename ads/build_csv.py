@@ -15,7 +15,7 @@ COUNTDOWN_LANG = "Hebrew"
 
 # ---- helper to write a section ----
 def section(rows_out, header, fieldnames, items):
-    rows_out.append(header)               # section header
+    rows_out.append([header])             # section header (single cell)
     rows_out.append(fieldnames)           # column names
     for it in items:
         rows_out.append([it.get(c, "") for c in fieldnames])
