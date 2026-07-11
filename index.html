@@ -20,15 +20,11 @@
 </head>
 <body>
 
-<nav class="nav" id="nav">
-  <a href="#home" class="logo">LUMERA</a>
-  <div class="nav-links">
-    <a href="#services">השירותים</a>
-    <a href="#about">הסטודיו</a>
-    <a href="#gallery">גלריה</a>
-    <a href="#contact">צור קשר</a>
-  </div>
-</nav>
+<div class="brand-header" aria-label="LUMERA">
+  <a href="#home" aria-label="LUMERA">
+    <img class="brand-logo" src="assets/lumera-logo-landscape.png" alt="LUMERA — סטודיו לפילאטיס">
+  </a>
+</div>
 
 <header class="hero" id="home">
   <img src="assets/img/hero-home.jpg" alt="סטודיו פילאטיס יוקרתי">
@@ -159,7 +155,7 @@
   // hide loader
   window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('loader').classList.add('hide'),600);});
   // nav solid on scroll
-  window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('solid',window.scrollY>60);});
+  window.addEventListener('scroll',()=>{document.querySelector('.brand-header').classList.toggle('solid',window.scrollY>60);});
   // reveal on view
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');}),{threshold:.15});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
