@@ -7,8 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-XXXXXXXXX');</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18101301732"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18101301732');
+</script>
 </head>
 <body>
 <nav class="nav solid"><a href="index.html" class="logo">LUMERA</a>
@@ -57,7 +64,11 @@
 <script>
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');}),{threshold:.15});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  function track(e){e.preventDefault();gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/YYYYYYYYYYYYYY'});window.location.href='thank-you.html';}
+  function track(e){
+    e.preventDefault();
+    // Conversion event will be added here after Google Ads provides the conversion label.
+    window.location.href='thank-you.html';
+  }
 </script>
 </body>
 </html>
