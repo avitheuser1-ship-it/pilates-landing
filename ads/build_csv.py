@@ -49,9 +49,6 @@ rows.append(mk({"Campaign":"קמפיין מותג","Campaign type":"Search","Cam
 rows.append(mk({"Campaign":"קמפיין GDN","Campaign type":"Display","Campaign subtype":"Standard",
     "Status":"Paused","Networks":"Display Network","Languages":"Hebrew",
     "Bid strategy type":"Manual CPC","Budget":"40","EU political ads":"No"}))
-rows.append(mk({"Campaign":"קמפיין וידאו","Campaign type":"Video",
-    "Status":"Paused","Networks":"","Languages":"Hebrew",
-    "Bid strategy type":"Manual CPC","Budget":"30","EU political ads":"No"}))
 
 # ---- Call-only campaign (separate campaign, not ad group) ----
 rows.append(mk({"Campaign":"קמפיין התקשרות בלבד","Campaign type":"Search","Campaign subtype":"Call only",
@@ -65,7 +62,6 @@ rows.append(mk({"Campaign":"קמפיין חיפוש","Ad group":"חיפוש-גי
 rows.append(mk({"Campaign":"קמפיין מותג","Ad group":"מותג-לומרה","Max CPC":"4","Status":"Paused"}))
 rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-לא-המירו","Max CPC":"2","Status":"Paused"}))
 rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-אפסייל","Max CPC":"2","Status":"Paused"}))
-rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Max CPC":"3","Status":"Paused"}))
 
 
 kw_data = [
@@ -141,10 +137,6 @@ rows.append(mk({"Campaign":"קמפיין GDN","Ad group":"GDN-אפסייל","Ad 
     "Headline 1":"המשיכי את הדרך עם לומרה","Headline 2":"שיעור פרטי בהנחה","Headline 3":"קחי את זה צעד קדימה",
     "Description 1":"אהבת את השיעור הראשון? קבלי אימון פרטי בהנחה בלעדית.",
     "Description 2":"מחכות לך חוויות פילאטיס מתקדמות בלומרה."}))
-rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Ad type":"Video ad","Asset action":"ADD",
-    "Status":"Paused","Final URL":HOME,"YouTube video":"https://www.youtube.com/watch?v=gRYUN0c9i44"}))
-rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה","Ad type":"Video ad","Asset action":"ADD",
-    "Status":"Paused","Final URL":HOME,"YouTube video":"https://www.youtube.com/watch?v=niJP9ud4zdw"}))
 
 # ---- Sitelinks & Call extension ----
 # NOTE: Sitelinks + Call extension are added MANUALLY in the Editor UI.
@@ -174,11 +166,6 @@ for camp in ["קמפיין חיפוש","קמפיין מותג"]:
 for nk in ["חינם","עבודה","לימודים","קורס מדריכים","סרטונים"]:
     rows.append(mk({"Campaign":"קמפיין חיפוש","Negative keyword":nk,
         "Negative keyword match type":"Exact","Status":"Paused"}))
-
-# ---- YouTube channels ----
-rows.append(mk({"Campaign":"קמפיין וידאו","Ad group":"וידאו-לומרה",
-    "YouTube channels":"youtube.com/c/blogilates;youtube.com/c/yogawithadriene;youtube.com/c/popsugarfitness;youtube.com/c/PsycheTruth",
-    "Status":"Paused"}))
 
 # ---- write ----
 os.makedirs("/Users/amit/pilates-landing/ads", exist_ok=True)
