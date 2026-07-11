@@ -24,7 +24,7 @@ def set_cell(cell, text, bold=False, color=INK, size=10.5):
     cell.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
 
 def add_p(doc,text='',size=11,color=INK,bold=False,align=WD_ALIGN_PARAGRAPH.RIGHT,after=7):
-    p=doc.add_paragraph(); bidi(p); p.alignment=align; p.paragraph_format.space_after=Pt(after); p.paragraph_format.line_spacing=1.15
+    p=doc.add_paragraph(); bidi(p); p.alignment=WD_ALIGN_PARAGRAPH.RIGHT; p.paragraph_format.space_after=Pt(after); p.paragraph_format.line_spacing=1.15
     if text:
         r=p.add_run(text); r.font.name='Arial'; r.font.size=Pt(size); r.font.color.rgb=RGBColor.from_string(color); r.bold=bold
     return p
@@ -42,12 +42,12 @@ def table(doc,headers,rows):
 
 doc=Document(); sec=doc.sections[0]; sec.top_margin=Inches(.6); sec.bottom_margin=Inches(.6); sec.left_margin=Inches(.75); sec.right_margin=Inches(.75)
 doc.styles['Normal'].font.name='Arial'; doc.styles['Normal'].font.size=Pt(11)
-header=sec.header.paragraphs[0]; header.alignment=WD_ALIGN_PARAGRAPH.CENTER; header.add_run().add_picture(str(LOGO),width=Inches(1.55))
-footer=sec.footer.paragraphs[0]; footer.alignment=WD_ALIGN_PARAGRAPH.CENTER; r=footer.add_run('LUMERA · פרסום בגוגל · עמית סולימן'); r.font.name='Arial'; r.font.size=Pt(8); r.font.color.rgb=RGBColor.from_string(MUTED)
+header=sec.header.paragraphs[0]; header.alignment=WD_ALIGN_PARAGRAPH.RIGHT; header.add_run().add_picture(str(LOGO),width=Inches(1.55))
+footer=sec.footer.paragraphs[0]; footer.alignment=WD_ALIGN_PARAGRAPH.RIGHT; r=footer.add_run('LUMERA · פרסום בגוגל · עמית סולימן'); r.font.name='Arial'; r.font.size=Pt(8); r.font.color.rgb=RGBColor.from_string(MUTED)
 
-p=add_p(doc,'',after=3); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.add_run().add_picture(str(LOGO),width=Inches(3.4))
-add_p(doc,'פרסום בגוגל',25,INK,True,WD_ALIGN_PARAGRAPH.CENTER,2)
-add_p(doc,'מטלת סיום · תשפ״ו 2026',13,SAGE,False,WD_ALIGN_PARAGRAPH.CENTER,20)
+p=add_p(doc,'',after=3); p.add_run().add_picture(str(LOGO),width=Inches(3.4))
+add_p(doc,'פרסום בגוגל',25,INK,True,WD_ALIGN_PARAGRAPH.RIGHT,2)
+add_p(doc,'מטלת סיום · תשפ״ו 2026',13,SAGE,False,WD_ALIGN_PARAGRAPH.RIGHT,20)
 
 title(doc,'פרטי הסטודנט')
 table(doc,['פרט','מידע'],[
@@ -70,6 +70,6 @@ table(doc,['דף','כתובת'],[
  ('דף תודה','https://avitheuser1-ship-it.github.io/pilates-landing/thank-you.html')])
 
 title(doc,'מספר חשבון פרסום בגוגל')
-add_p(doc,'580-214-1692',16,GOLD,True,WD_ALIGN_PARAGRAPH.CENTER,0)
+add_p(doc,'580-214-1692',16,GOLD,True,WD_ALIGN_PARAGRAPH.RIGHT,0)
 
 doc.save(OUT); print(OUT)
